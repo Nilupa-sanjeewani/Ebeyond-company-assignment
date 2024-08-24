@@ -1,0 +1,212 @@
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("./images/Hero Banner.png") no-repeat center center/cover;
+    color: rgb(251, 249, 249);
+}
+
+.hero-section img {
+    height: 100vh;
+    position: absolute;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 3px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 1em;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    font-weight: 800;
+    margin: 100px 0 20px 30px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    max-width: 400px;
+    margin: 0 0 0 30px;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .menu a {
+        font-size: 0.9em;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 0;
+        background: #3a3838;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100%;
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+
+.about-us-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-us-section h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0864b1;
+    text-decoration: underline #666766;
+}
+
+.about-us-section p {
+    font-size: 1.2em;
+    max-width: 690px;
+    margin: 0 auto 40px auto;
+    line-height: 2;
+}
+
+.latest-news-section {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.latest-news-section h2 {
+    padding: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0864b1;
+    text-decoration: underline #666766;
+}
+
+.news-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 350px;
+    margin: 20px;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
+}
+
+.news-card-image-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.news-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.news-card-content {
+    padding: 25px;
+}
+
+.news-card-description {
+    font-size: 1em;
+    color: #666;
+    margin: 0 0 15PX;
+    text-align: left;
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0864b1;
+    text-decoration: underline;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact-us h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0864b1;
+    text-decoration: underline;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.footer {
+    background-color: #0864b1;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 80px;
+}
